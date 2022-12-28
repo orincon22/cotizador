@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Cotizador | Aplicación para enviar cotizaciones</title>
+<!-- Bootstrap core CSS -->
+<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-primary mb-3">
+	  <div class="container-fluid">
+	    <a class="navbar-brand text-white" th:href="@{/}">Cotizador</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarText">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link text-white" th:href="@{/productos/index}">Productos</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container">
+		<h5 class="card-title mb-3">Lista de Productos</h5>
+		<div class="card">
+		  <div class="card-body">
+		    <table class="table table-light table-hover table-striped table-bordered">
+		       <!-- Header Table -->
+		       <thead>
+		            <tr>
+		                <th>Id</th>
+						<th>Nombre</th>
+		                <th>Categoria</th>
+		                <th>Fabricante</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>Mark</td>
+				      <td>Otto</td>
+				      <td>@mdo</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>Jacob</td>
+				      <td>Thornton</td>
+				      <td>@fat</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>Larry the Bird</td>
+				      <td></td>
+				      <td>@twitter</td>
+				    </tr>
+				  </tbody>                                               
+		    </table>
+		  </div>
+		</div>
+	</div>
+	
+	
+	<!-- Your JS code here  -->
+    <!--<script th:src="@{/js/datatable.js}"></script>-->
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>
